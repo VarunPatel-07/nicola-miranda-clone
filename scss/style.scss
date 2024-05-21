@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+html{
+    body{
+        h1,h2,h3,h4,h5,h6,p,ul,li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+       
+    }
+}
+
+:root{
+    --website-main-bg-color:#c4bcb2;  
+    --main-red-color:#C03F13;  
+}
+
+
+@import "./variable";
+
+
+#main{
+    background-color: var(--website-main-bg-color);
+    position: relative;
+}
+
+#page1 , #page2 , #page3 , #page4 , #page5{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--website-main-bg-color);
+}
+@media only screen and (max-width:1199px) {
+    #page1 , #page2 , #page3 , #page4 , #page5{
+        width: 100%;
+        min-height: 100%;
+        position: relative;
+        background-color: var(--website-main-bg-color);
+    }
+}
